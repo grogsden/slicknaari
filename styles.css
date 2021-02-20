@@ -9,25 +9,20 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}b
 
-ody {
-  background-color: black;
 }
-.row {
-    display: flex;
 
-  }
-
-  .column-1 {
-    color: white;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    
-    
-  }
+.nav {
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  justify-content:flex-start;
+}
+.nav li{
+  list-style-type: none;
+}
   
   /* .column-2 {
     
@@ -40,25 +35,28 @@ ody {
     
   } */
 
-  .logo {
+.logo {
     width:250px;
     height: auto;
-  }
-
+}
 h1 {
     color: white
 }
-
 a:link {
   color: white;
   text-decoration: none;
 }
-
 a:visited {
   color: white;
 }
-
 a:hover {
   font-family: 'RAW', cursive;
   font-size: 40px;
+}
+
+/* desktop */
+@media screen and (min-width: 500px){
+  .nav{
+    display: inline-block;
+  }
 }
